@@ -9,10 +9,10 @@ from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 nltk.download('stopwords')
 
-with open('F:/CreditScore/Machine Learning/Default risk Analysis/log_reg.pkl', 'rb') as file:
+with open('./Credit Score/Default risk Analysis/log_reg.pkl', 'rb') as file:
     model = pickle.load(file)
 
-model_path = 'F:/CreditScore/Machine Learning/Sentiment Analysis/my_model.keras'
+model_path = './Credit Score/Sentiment Analysis/my_model.keras'
 sent_model = load_model(model_path)
 
 with open('F:/CreditScore/Machine Learning/Sentiment Analysis/tokenizer.pkl', 'rb') as file:
