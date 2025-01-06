@@ -76,8 +76,6 @@ PAY_5 = st.number_input("PAY_5 (Five months ago payment status):", value=0)
 PAY_6 = st.number_input("PAY_6 (Six months ago payment status):", value=0)
 
 st.subheader("Sentiment Analysis")
-
-st.text_input("Enter the twitter handle link")
 text = st.text_area("Enter your recent twitter post ")
 st.subheader("Spending to income ratio")
 
